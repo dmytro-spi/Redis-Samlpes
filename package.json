@@ -1,0 +1,27 @@
+{
+  "name": "redis-adv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "engines": {
+    "node": ">=16.14.0",
+    "npm": ">=8.5.0"
+  },
+  "scripts": {
+    "start": "tsc && node ./dist/app.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19",
+    "redis": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "concurrently": "^7.3.0",
+    "typescript": "^4.7.4"
+  }
+}
